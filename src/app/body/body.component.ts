@@ -16,12 +16,17 @@ export class BodyComponent implements OnInit {
    
   }
 
-  onSubmitBody(){
-    
-  }
-
   onSubmitEnter() {
     console.log(10);
   }
+
+  onEnterUsers() {
+    console.log(10);
+  }
+
+ onSubmitViewList() {
+    console.log(10);
+  }
+
 
 }
