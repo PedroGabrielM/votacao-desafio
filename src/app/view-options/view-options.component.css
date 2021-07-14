@@ -16,3 +16,25 @@
     background-color: #fff !important;
     color: #f4511e;
   }
+
+  .panel {
+    border: 1px solid #f4511e;
+    border-radius:0;
+    transition: box-shadow 0.5s;
+  }
+  
+  .panel:hover {
+    box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
+
+  .list-group-item {
+      margin: 10px;
+  }
+
+  .list-group-item .checkbox {
+      border: 10px;
+  }
+  
+  .checkbox1 .checkbox2 .checkbox3 .checkbox4 .checkbox5 {
+      margin: 10px !important;
+  }

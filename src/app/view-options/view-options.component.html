@@ -5,8 +5,8 @@
         View votes here
     </button>
 </p>
-<div class="collapse" id="collapseVotes">
+<div class="collapse" id="collapseVotes" *ngFor="let votes of votes">
     <div class="card card-body">
-        Option [1] -> cont Option [2] -> cont Option [3] -> cont Option [4] -> cont Option [5] -> cont
+        {{ votes }}
     </div>
 </div>

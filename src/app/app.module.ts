@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { BodyComponent } from './body/body.component';
 import { ModalComponent } from './modal/modal.component';
 import { OptionsComponent } from './options/options.component';
+import { OptionsService } from './services/options.service';
 import { SendOptionsComponent } from './send-options/send-options.component';
 import { ViewOptionsComponent } from './view-options/view-options.component';
 
@@ -25,7 +26,8 @@ import { ViewOptionsComponent } from './view-options/view-options.component';
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [],
+  exports: [SendOptionsComponent],
+  providers: [OptionsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

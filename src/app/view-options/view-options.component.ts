@@ -9,7 +9,7 @@ export class ViewOptionsComponent implements OnInit {
 
   options: string[] = ['option1' , 'option2' , 'option3' , 'option4' , 'option5'];
   
-  votes: string[] = [];
+  votes: string[] = ['option1' , 'option2' , 'option3' , 'option4' , 'option5'];
 
   @Input() quantity: number = 0;
 
