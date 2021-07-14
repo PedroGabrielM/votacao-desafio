@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-body',
@@ -8,26 +8,23 @@ import { Component, OnInit } from '@angular/core';
 export class BodyComponent implements OnInit {
   
   options: string[] = ['option1' , 'option2' , 'option3' , 'option4' , 'option5'];
+  
+  votes: string[] = [];
+
+  @Input() quantity: number = 0;
+
+  @Output() mudouValor = new EventEmitter;
 
   constructor() { }
 
+
   ngOnInit(): void {
 
-  }
-
-  onSubmitEnter() {
-    alert("Vote send, ok");
-    console.log(10);
   }
 
   onEnterUsers() {
     alert("Hello");
     console.log(10);
   }
-
-  onSubmitViewList() {
-    alert("View all oprions list");
-    console.log(10);
-    var btnViewList = document.getElementById('btnViewList');
-  }
+  
 }

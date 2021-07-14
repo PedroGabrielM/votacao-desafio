@@ -11,7 +11,7 @@ export class OptionsService {
 
   constructor(private http: HttpClient) { }
 
-  public getUsers() {
+  public getOptions() {
     return this.http.get(`${this.SERVER_URL}/options`)
   }
 }

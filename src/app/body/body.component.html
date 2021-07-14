@@ -13,50 +13,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="panel-body">
-                    <ul class="list-group">
-                        <li class="list-group-item">
-                            <div class="checkbox">
-                                <input type="checkbox" id="checkbox" />
-                                <label for="checkbox">
-                                    Option 1
-                                </label>
-                            </div>
-                        </li>
-                        <li class="list-group-item">
-                            <div class="checkbox">
-                                <input type="checkbox" id="checkbox2" />
-                                <label for="checkbox2">
-                                    Option 2
-                                </label>
-                            </div>
-                        </li>
-                        <li class="list-group-item">
-                            <div class="checkbox">
-                                <input type="checkbox" id="checkbox3" />
-                                <label for="checkbox3">
-                                    Option 3
-                                </label>
-                            </div>
-                        </li>
-                        <li class="list-group-item">
-                            <div class="checkbox">
-                                <input type="checkbox" id="checkbox4" />
-                                <label for="checkbox4">
-                                    Option 4
-                                </label>
-                            </div>
-                        </li>
-                        <li class="list-group-item">
-                            <div class="checkbox">
-                                <input type="checkbox" id="checkbox5" />
-                                <label for="checkbox5">
-                                    Option 5
-                                </label>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
+                <app-options></app-options>
                 <div class="panel-footer">
                     <div class="row">
                         <div class="col-md-6">
@@ -67,21 +24,6 @@
             </div>
         </div>
     </div>
-    <p>
-        <button class="btn btn-primary" type="button" (click)="onSubmitEnter()">
-            Submit
-        </button>
-    </p>
-    <p>
-        <button id="btnViewList" class="btn btn-primary" type="button" data-bs-toggle="collapse"
-            data-bs-target="#collapseVotes" aria-expanded="false" aria-controls="collapseEVotes"
-            (click)="onSubmitViewList()" data-toggle="modal" data-target="#ExemploModalCentralizado">
-            View votes here
-        </button>
-    </p>
-    <div class="collapse" id="collapseVotes">
-        <div class="card card-body">
-            Option [1] -> cont Option [2] -> cont Option [3] -> cont Option [4] -> cont Option [5] -> cont
-        </div>
-    </div>
+    <app-send-options></app-send-options>
+    <app-view-options></app-view-options>
 </div>

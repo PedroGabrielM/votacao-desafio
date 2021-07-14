@@ -1,0 +1,18 @@
+.panel-footer .btn {
+  margin: 15px 0;
+  background-color: #f4511e;
+  color: #fff;
+}
+
+.btn-primary {
+  border: 1px solid #fff;
+  background-color: #f4511e !important;
+  color: #fff;
+  margin: 12px;
+}
+
+.btn-primary .btn:hover {
+  border: 1px solid #f4511e;
+  background-color: #fff !important;
+  color: #f4511e;
+}
