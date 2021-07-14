@@ -6,27 +6,28 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./body.component.css']
 })
 export class BodyComponent implements OnInit {
-
-  users = "";
-  cont = 0;
+  
+  options: string[] = ['option1' , 'option2' , 'option3' , 'option4' , 'option5'];
 
   constructor() { }
 
   ngOnInit(): void {
-   
+
   }
 
   onSubmitEnter() {
+    alert("Vote send, ok");
     console.log(10);
   }
 
   onEnterUsers() {
+    alert("Hello");
     console.log(10);
   }
 
- onSubmitViewList() {
+  onSubmitViewList() {
+    alert("View all oprions list");
     console.log(10);
+    var btnViewList = document.getElementById('btnViewList');
   }
-
-
 }

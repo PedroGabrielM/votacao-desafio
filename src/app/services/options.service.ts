@@ -4,7 +4,7 @@ import { HttpClient } from '@angular/common/http';
 @Injectable({
   providedIn: 'root'
 })
-export class UserService {
+export class OptionsService {
 
   SERVER_URL = "http://localhost:3000";
 
@@ -12,7 +12,6 @@ export class UserService {
   constructor(private http: HttpClient) { }
 
   public getUsers() {
-    return this.http.get(`${this.SERVER_URL}/user`)
+    return this.http.get(`${this.SERVER_URL}/options`)
   }
-
 }

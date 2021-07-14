@@ -6,7 +6,8 @@
                     <span class="glyphicon glyphicon-list"></span>Users
                     <div class="pull-right action-buttons">
                         <div class="btn-group pull-right">
-                            <button type="button" class="btn btn-default btn-xs dropdown-toggle" (click)="onEnterUsers()">
+                            <button type="button" class="btn btn-default btn-xs dropdown-toggle"
+                                (click)="onEnterUsers()">
                                 <span class="glyphicon glyphicon-user" style="margin-right: 0px;"></span>
                             </button>
                         </div>
@@ -67,11 +68,20 @@
         </div>
     </div>
     <p>
-      <button class="btn btn-primary" type="button" (click)="onSubmitEnter()">
-        Submit
-      </button>   
+        <button class="btn btn-primary" type="button" (click)="onSubmitEnter()">
+            Submit
+        </button>
     </p>
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ExemploModalCentralizado">
-            Abrir modal de demonstração
-          </button>
+    <p>
+        <button id="btnViewList" class="btn btn-primary" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseVotes" aria-expanded="false" aria-controls="collapseEVotes"
+            (click)="onSubmitViewList()" data-toggle="modal" data-target="#ExemploModalCentralizado">
+            View votes here
+        </button>
+    </p>
+    <div class="collapse" id="collapseVotes">
+        <div class="card card-body">
+            Option [1] -> cont Option [2] -> cont Option [3] -> cont Option [4] -> cont Option [5] -> cont
+        </div>
+    </div>
 </div>
