@@ -1,17 +1,33 @@
-import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { Injectable, EventEmitter } from '@angular/core';
+
+//import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
 })
 export class OptionsService {
 
-  SERVER_URL = "http://localhost:3000";
+ // SERVER_URL = "http://localhost:3000";
 
+  sendOptionsList = new EventEmitter();
 
-  constructor(private http: HttpClient) { }
+  options: string[] = ['Option - 1' , 'Option - 2' , 'Option - 3' , 'Option - 4' , 'Option - 5'];
 
-  public getOptions() {
-    return this.http.get(`${this.SERVER_URL}/options`)
+  //private http: HttpClient
+
+  constructor() { 
+    console.log('OptionsService');
+  }
+
+  //public getOptions() {
+  //  return this.http.get(`${this.SERVER_URL}/options`)
+  //}
+
+  getOptions(){
+     return this.options;  
+  }
+
+  addOptions(options: string){
+    this.options.push(options);
   }
 }

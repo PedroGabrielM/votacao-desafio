@@ -26,8 +26,7 @@ import { ViewOptionsComponent } from './view-options/view-options.component';
     AppRoutingModule,
     HttpClientModule
   ],
-  exports: [SendOptionsComponent],
-  providers: [OptionsService],
+  //providers:[OptionsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

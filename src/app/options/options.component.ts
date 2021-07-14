@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OptionsComponent implements OnInit {
 
-  options: string[] = ['Option - 1' , 'Option - 2' , 'Option - 3' , 'Option - 4' , 'Option - 5'];
+  optionsView: string[] = ['Options - 1' , 'Options - 2' , 'Options - 3' , 'Options - 4' , 'Options - 5'];
 
   constructor() { }
 

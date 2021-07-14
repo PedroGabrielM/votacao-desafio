@@ -6,27 +6,18 @@ import { Component, OnInit,EventEmitter, Input, Output } from '@angular/core';
   styleUrls: ['./view-options.component.css']
 })
 export class ViewOptionsComponent implements OnInit {
-
-  options: string[] = ['option1' , 'option2' , 'option3' , 'option4' , 'option5'];
   
-  votes: string[] = ['option1' , 'option2' , 'option3' , 'option4' , 'option5'];
-
-  @Input() quantity: number = 0;
-
-  @Output() mudouValor = new EventEmitter;
+  viewOptions: string[] = ['Options - 1 [ ]' , 'Options - 2 [ ]' , 'Options - 3 [ ]' , 'Options - 4 [ ]' , 'Options - 5 [ ]'];
 
   constructor() { }
-
 
   ngOnInit(): void {
 
   }
 
   onSubmitViewList() {
-    alert("View all options list");
-    console.log(10);
-    var btnViewList = document.getElementById('btnViewList');
-    return this.options;
+    var btnViewList = document.getElementById('btnSendOptions');
+    return btnViewList;
   }
 
 }

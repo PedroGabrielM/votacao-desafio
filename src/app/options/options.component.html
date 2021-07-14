@@ -1,10 +1,10 @@
 <div class="panel-body">
     <ul class="list-group">
-        <li class="list-group-item" *ngFor="let options of options">
+        <li class="list-group-item" *ngFor="let optionsView of optionsView">
             <div class="checkbox">
-                <input type="checkbox" id="checkbox" />
+                <input type="checkbox" id="checkbox" #optionsInput />
                 <label for="checkbox">
-                    {{ options }}
+                    {{ optionsView }}
                 </label>
             </div>
         </li>
