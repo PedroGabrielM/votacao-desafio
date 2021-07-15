@@ -2,9 +2,9 @@
     <ul class="list-group">
         <li class="list-group-item" *ngFor="let optionsView of optionsView">
             <div class="checkbox">
-                <input type="checkbox" id="checkbox" #optionsInput />
+                <input type="checkbox" id="checkbox" #optionsInput (input)="onSendOptions($event)"/>
                 <label for="checkbox">
-                    {{ optionsView }}
+                    {{ optionsSendView() }}
                 </label>
             </div>
         </li>

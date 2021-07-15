@@ -11,7 +11,7 @@ import { OptionsService } from '../services/options.service';
 export class SendOptionsComponent implements OnInit {
 
     
-  options: string[] = [];
+  optionsSend: string[] = [];
   
   @Input() quantity: number = 0;
 
@@ -21,12 +21,16 @@ export class SendOptionsComponent implements OnInit {
 
 
   ngOnInit(): void {
-    this.options = this.optionsService.getOptions();
+    this.optionsSend = this.optionsService.getOptions();
   }
 
   sendOptions() {
+    console.log(this.optionsSend);
     console.log(this.quantity);
     this.quantity++;
   }
 
+  onSendOptions(event: any) {
+   console.log(10);
+  }
 }

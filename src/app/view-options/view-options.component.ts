@@ -1,4 +1,4 @@
-import { Component, OnInit,EventEmitter, Input, Output } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-view-options',
@@ -8,6 +8,7 @@ import { Component, OnInit,EventEmitter, Input, Output } from '@angular/core';
 export class ViewOptionsComponent implements OnInit {
   
   viewOptions: string[] = ['Options - 1 [ ]' , 'Options - 2 [ ]' , 'Options - 3 [ ]' , 'Options - 4 [ ]' , 'Options - 5 [ ]'];
+  listOptions= "hello";
 
   constructor() { }
 
@@ -18,6 +19,10 @@ export class ViewOptionsComponent implements OnInit {
   onSubmitViewList() {
     var btnViewList = document.getElementById('btnSendOptions');
     return btnViewList;
+  }
+
+  getViewOptions() {
+    return this.listOptions;
   }
 
 }

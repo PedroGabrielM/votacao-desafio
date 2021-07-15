@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-options',
@@ -7,11 +7,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OptionsComponent implements OnInit {
 
-  optionsView: string[] = ['Options - 1' , 'Options - 2' , 'Options - 3' , 'Options - 4' , 'Options - 5'];
+  //ng@Input cont 
+
+  optionsView: string[] = ['Options - 1 [ ]' , 'Options - 2 [ ]' , 'Options - 3 [ ]' , 'Options - 4 [ ]' , 'Options - 5 [ ]'];
+  optionsList = "Hello";
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  onSendOptions(event: any) {
+    console.log(event);
+    this.optionsList = (<HTMLInputElement>event.target).value
+  }
+
+  optionsSendView() {
+    return this.optionsView[0];
+  }
 }

@@ -24,7 +24,8 @@ import { ViewOptionsComponent } from './view-options/view-options.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   //providers:[OptionsService],
   bootstrap: [AppComponent]
